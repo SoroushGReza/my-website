@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Soroush</title>
 </head>
@@ -15,10 +18,11 @@
 <body>
     <!--  Header  -->
     <header>
+        <!--  -------------- Header Image --------------  -->
         <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo">
+            <a href="index.html" class="col-md-4 logo"></a>
 
-            </a>
+            <!--  -------------- Name and Title --------------  -->
             <div class="col-md-8">
                 <div class="row bg-color-name-title no-gutters">
                     <div class="col heading">
@@ -26,21 +30,28 @@
                         <h2 class="title">Junior Full Stack Developer</h2>
                     </div>
                 </div>
+
+                <!--  --------------Nav Links--------------  -->
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
-                                <a href="#"><i class="fa-solid fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="#" class="hvr-bounce-to-right"><i class="fa-solid fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
 
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
-                                <a href="#"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="#" class="hvr-bounce-to-right"><i class="fa-solid fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
-                                <a href="#"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="#" class="hvr-bounce-to-right"><i class="fa-solid fa-envelope"
+                                        aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
-                                <a href="#"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>Download CV</span></a>
+                                <a href="#" class="hvr-bounce-to-right"><i class="fa-solid fa-file-arrow-down"
+                                        aria-hidden="true"></i><span>Download
+                                        CV</span></a>
                             </li>
                         </ul>
                     </div>
@@ -56,8 +67,48 @@
     </section>
 
     <!--  Footer  -->
-    <footer>
+    <footer class="container-fluid">
+        <div class="row" id="overall-footer">
 
+            <!--  -------------- About --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">Junior Full Stack Software Developer. Proficient in <span class="bold">Python</span>, <span class="bold">JavaScript</span>, <span class="bold">CSS</span>,
+                    <span class="bold">HTML</span>, and hands-on experience with frameworks and libraries such as <span class="bold">Django</span>, <span class="bold">Bootstrap</span>, <span class="bold">Flask</span> and
+                    <span class="bold">React</span> among others.</p>
+            </div>
+
+            <!--  -------------- Download --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Printable version of my CV
+                    <a href="#" target="_blank" class="cv-pdf">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Download link./span>
+                    </a>
+                </p>
+            </div>
+
+            <!--  -------------- Find me on --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Find me on</h5>
+                <ul class="list-inline find-me-links">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>

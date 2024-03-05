@@ -8,25 +8,29 @@
 }
 
 .bg-color-three-reasons {
-    background-color: #5f5f5f;
+    background-color: #ededed;
+}
+
+.bg-color-personal-info {
+    background-color: #c3c5ab;
 }
 
 /*------------ Nav links*/
 
 .ui-menu-color-home {
-    background-color: rgb(5, 0, 75);
+    background-color: #a10000;
 }
 
 .ui-menu-color-resume {
-    background-color: rgb(0, 78, 30);
+    background-color: rgb(0, 100, 38);
 }
 
 .ui-menu-color-contact {
-    background-color: rgb(81, 30, 0);
+    background-color: rgb(113, 42, 0);
 }
 
 .ui-menu-color-download {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(84, 84, 84);
 }
 
 /*------------------------------------------------ Heading */
@@ -164,7 +168,9 @@ h4 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    font-size: 30px;
+    color: #1a1a1a;
 }
 
 .bold {
@@ -237,4 +243,80 @@ footer {
 
 .find-me-links li a i:hover {
     background: rgb(0, 83, 122);
+}
+
+
+/*------------------------------------------------ Three Reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #a10000;
+}
+
+
+.three-reasons-heading {
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.three-reasons-p {
+    color: #1a1a1a;
+    padding-bottom: 25px;
+}
+
+
+/*------------------------------------------------ Personal Info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item-with-icon {
+    margin-bottom: 20px;
+    display: inline-block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+
+/* --------  WhatsApp  -------- */
+.whatsapp-label {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+    font-weight: 700;
+}
+
+.personal-info-icon {
+    font-size: larger;
+    color: #006427;
 }

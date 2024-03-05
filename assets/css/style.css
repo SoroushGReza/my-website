@@ -7,6 +7,10 @@
     background-color: #131418;
 }
 
+.bg-color-three-reasons {
+    background-color: #5f5f5f;
+}
+
 /*------------ Nav links*/
 
 .ui-menu-color-home {
@@ -36,6 +40,8 @@ header {
     margin-bottom: 25px;
 }
 
+/*  ---- Header image ----  */
+
 .logo {
     background: url("../images/11.png");
     background-position: center;
@@ -51,6 +57,8 @@ header {
     background-color: #000000;
 }
 
+/*  ---- Header Name ----  */
+
 .name {
     font-family: "Averia Sans Libre", sans-serif;
     font-weight: 300;
@@ -59,6 +67,8 @@ header {
     font-size: 40px;
     margin-top: 30px;
 }
+
+/*  ---- Header Title ----  */
 
 .title {
     font-family: "Lato", sans-serif;
@@ -140,6 +150,23 @@ h4 {
     display: inline-block;
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 .bold {
     font-weight: bold;
     color: #979797;
@@ -148,7 +175,7 @@ h4 {
 
 /*------------------------------------------------ Hover.css */
 
-.hvr-bounce-to-right:before {
+.hvr-sweep-to-left:before {
     background: rgba(0, 0, 0, 0.7);
     height: 83px;
 }

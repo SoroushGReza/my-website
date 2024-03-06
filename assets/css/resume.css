@@ -1,5 +1,10 @@
 /*------------------------------------------------ Section resume.html */
 
+.frontend-backend {
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
 
 /* -------- Front End Icon -------- */
 
@@ -19,18 +24,11 @@
 
 /* -------- Skills -------- */
 
-.progress {
-    position: relative;
-    height: 25px;
-    margin-bottom: 4px;
+.my-skills-icons {
+    font-size: 21px;
+    color: rgb(67, 67, 67);
 }
 
-.progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 400;
-    padding: 12px 30px 2px 10px;
-    color: #fafafa;
-    background-color: rgba(25, 25, 25, 0.2);
-    height: 25px;
+.my-skills-item {
+    height: 18px;
 }

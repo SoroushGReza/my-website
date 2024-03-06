@@ -26,9 +26,32 @@
 
 .my-skills-icons {
     font-size: 21px;
-    color: rgb(67, 67, 67);
+    color: rgb(223, 223, 223);
+    margin-right: 10px;
 }
 
 .my-skills-item {
     height: 18px;
+}
+
+/* ----------------------------------------Skills */
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 5px 30px 5px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+    font-size: 15px;
+}
+
+.progress-section {
+    margin: 40px 20px;
 }

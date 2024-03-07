@@ -36,6 +36,7 @@
 
 /* ----------------------------------------Skills */
 
+/*  Progress Bars  */
 .progress {
     position: relative;
     height: 30px;
@@ -54,4 +55,13 @@
 
 .progress-section {
     margin: 40px 20px;
+}
+
+
+/*  -- Badges --  */
+.additional-skills {
+    font-size: 14px;
+    padding: 6px;
+    margin-right: 8px;
+    margin-bottom: 5px;
 }

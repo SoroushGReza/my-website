@@ -10,7 +10,7 @@
 
 .fa-tv {
     font-size: 26px;
-    color: #00a148;
+    color: #a10000;
 }
 
 
@@ -18,7 +18,7 @@
 
 .fa-gears {
     font-size: 26px;
-    color: #00a148;
+    color: #a10000;
 }
 
 
@@ -64,4 +64,55 @@
     padding: 6px;
     margin-right: 8px;
     margin-bottom: 5px;
+}
+
+/* ----------------------------------------Work Experience */
+.bg-color-work-experience {
+    background-color: #006427;
+}
+
+.work-experience-heading {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.timeline-item {
+    padding: 4.3em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: #fafafa;
 }

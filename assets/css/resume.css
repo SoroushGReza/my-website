@@ -80,6 +80,7 @@
     color: #ffffff;
 }
 
+/*  Work History Timeline  */
 .timeline-item {
     padding: 4.3em 2em 0em 2em;
     position: relative;
@@ -115,4 +116,74 @@
     border-radius: 12px;
     content: '';
     background-color: #fafafa;
+}
+
+/*  Studies Timeline  */
+.timeline-item-studies {
+    padding: 4.3em 2em 0em 2em;
+    position: relative;
+    color: #c8ff00;
+    border-left: 1px solid;
+}
+
+.timeline-item-studies p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item-studies:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item-studies:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: #c8ff00;
+}
+
+.studies {
+    font-size: 12px;
+    color: #c8ff00;
+}
+
+/* Dropdowm Diploma */
+
+.dropdown-content {
+    position: absolute;
+    background-color: #444444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #394900}
+
+.fa-circle-chevron-down {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #fafafa;
 }

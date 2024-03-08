@@ -195,3 +195,7 @@
     cursor: pointer;
     color: #fafafa;
 }
+
+.fa-circle-chevron-down:hover {
+    color: #bdbdbd;
+}

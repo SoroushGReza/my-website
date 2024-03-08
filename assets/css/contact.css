@@ -1,0 +1,31 @@
+/*    --------------- contact ---------------    */
+
+/* Background color */
+
+.bg-color-contact {
+    background-color: #fff;
+}
+
+/*  Heading  */
+
+.contact-heading {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
+/*  Send Request Button  */
+.send-request-btn {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}

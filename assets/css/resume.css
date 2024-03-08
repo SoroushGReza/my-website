@@ -199,3 +199,7 @@
 .fa-circle-chevron-down:hover {
     color: #bdbdbd;
 }
+
+.history-items {
+    margin-bottom: 30px;
+}

@@ -29,7 +29,7 @@ html, body {
 }
 
 .bg-color-personal-info {
-    background-color: #d8d3c8;
+    background-color: #c7c7b7;
 }
 
 /*------------ Nav links*/
@@ -44,6 +44,13 @@ html, body {
 
 .ui-menu-color-contact {
     background-color: rgb(113, 42, 0);
+}
+
+.ui-menu-color-interests {
+    background-color: rgb(158, 137, 0);
+}
+.ui-menu-color-github {
+    background-color: rgb(0, 2, 112);
 }
 
 .ui-menu-color-download {
@@ -199,6 +206,7 @@ h4 {
     color: #1a1a1a;
 }
 
+
 .bold {
     font-weight: bold;
     color: #979797;
@@ -298,6 +306,7 @@ footer {
     margin-bottom: 20px;
     display: block;
     clear: both;
+    color: #000000;
 }
 
 .personal-info-item-with-icon {
@@ -344,7 +353,7 @@ footer {
 
 .personal-info-icon {
     font-size: larger;
-    color: #006427;
+    color: #007a2f;
 }
 
 

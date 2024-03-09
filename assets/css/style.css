@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap');
 
-/*------------------------------------------------ Colours */
+
+.container-fluid, .row, .no-gutters {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+
+/*----------------------------------------- Colours */
 
 .bg-color-name-title {
     /* background-color: #3331c9; */
@@ -33,7 +50,7 @@
     background-color: rgb(84, 84, 84);
 }
 
-/*------------------------------------------------ Heading */
+/*------------------------------------ Heading */
 
 header {
     margin: 0;
@@ -59,6 +76,14 @@ header {
 
     margin-top: -5px;
     background-color: #000000;
+    order: 0;
+}
+
+/*  ---- Name & Title div ----  */
+
+.row-name-title {
+    display: flex;
+    flex-direction: row;
 }
 
 /*  ---- Header Name ----  */
@@ -82,6 +107,7 @@ header {
     margin-bottom: 30px;
     color: rgb(255, 255, 255);
 }
+
 
 .list-inline-item:not(:last-child) {
     margin: 0;
@@ -131,7 +157,7 @@ header {
     letter-spacing: 2px;
 }
 
-/*------------------------------------------------ Special text/margins/paddings */
+/*--------------------------- Special text/margins/paddings */
 
 h1,
 h2,
@@ -319,4 +345,48 @@ footer {
 .personal-info-icon {
     font-size: larger;
     color: #006427;
+}
+
+
+/* ----------------------- Media Queries ----------------------- */
+
+/* ---- Change logo image on smaller screens ---- */
+
+@media (max-width: 768px) {
+    .logo {
+        background: url("../images/2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 190px;
+    
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+    
+        margin-top: -5px;
+        background-color: #000000;
+    }
+}
+
+/* ---- Logo image on top on smaller screens ---- */
+@media (max-width: 768px) {
+    .row.no-gutters {
+        flex-direction: column;
+    }
+
+    .logo {
+        order: -1;
+    }
+}
+
+/* -------- Media Query Name and heading -------- */
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 30px; /* Smaller font size for small screens */
+    }
+    .heading {
+        margin-left: 10px; /* Less margin for small screens */
+    }
 }

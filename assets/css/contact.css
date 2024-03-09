@@ -15,6 +15,12 @@
     margin-bottom: 20px;
 }
 
+/* ------ Margin between form inputs ------*/
+
+.form-control {
+    margin-bottom: 2px;
+}
+
 .center-form {
     padding-top: 10px;
     margin: 0 auto;

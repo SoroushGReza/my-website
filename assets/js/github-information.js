@@ -1,18 +1,18 @@
 //    User Information
 function userInformationHTML(user) {
   return `
-      <h2>${user.name}
+      <h3>${user.name}
           <span class="small-name">
               (@<a href="${user.html_url}" target="_blank">${user.login}</a>)
           </span>
-      </h2>
+      </h3>
       <div class="gh-content">
           <div class="gh-avatar">
               <a href="${user.html_url}" target="_blank">
                   <img src="${user.avatar_url}" width="80" height="80" alt="${user.login}" />
               </a>
           </div>
-          <p>Repos: ${user.public_repos}</p>
+          <p>Public Repos: ${user.public_repos}</p>
       </div>`;
 }
 
@@ -29,7 +29,7 @@ function repoInformationHTML(repos) {
   });
 
   return `<div class="clearfix repo-list">
-            <p><strong>Repo List:</strong></p>
+            <h5 class="text-center uppercase repo-list-heading">Repo List:</h5>
             <ul>${listItemsHTML.join("\n")}</ul>
           </div>`;
 }
@@ -69,7 +69,7 @@ function fetchGitHubInformation(event) {
           errorResponse.getResponseHeader("X-RateLimit-Reset") * 1000
         );
         $("#gh-user-data").html(
-          `<h4 class="too-many-requests">Too many requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`
+          `<h4 class="too-many-requests"><i class="fa-solid fa-circle-exclamation"></i> Too many requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`
         );
       } else {
         console.log(errorResponse);

@@ -16,7 +16,7 @@ function userInformationHTML(user) {
       </div>`;
 }
 
-// Repo Information
+//    Repo Information
 
 function repoInformationHTML(repos) {
   if (repos.length === 0) {

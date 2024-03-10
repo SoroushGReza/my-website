@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/github.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/github-information.js"></script>
+    <title>Soroush</title>
+</head>
+
+<body>
+    <!--  Header  -->
+    <header>
+        <div class="row no-gutters">
+
+            <!--  -------------- Name and Title --------------  -->
+            <div class="col-md-8">
+                <div class="row bg-color-name-title no-gutters row-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Soroush Gholamreza</h1>
+                        <h2 class="title">Junior Full Stack Developer</h2>
+                    </div>
+                </div>
+
+                <!--  --------------Nav Links--------------  -->
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul id="nav" class="list-inline menucontainer">
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-home menuitem">
+                                <a href="index.html" class="hvr-sweep-to-left"><i class="fa-solid fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
+
+                            </li>
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-resume menuitem">
+                                <a href="resume.html" class="hvr-sweep-to-left"><i class="fa-solid fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-contact menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-left"><i class="fa-solid fa-envelope"
+                                        aria-hidden="true"></i><span>Contact</span></a>
+                            </li>
+                            
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-github menuitem">
+                                <a href="github.html" class="hvr-sweep-to-left"><i class="fa-brands fa-github"
+                                        aria-hidden="true"></i><span>GitHub</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-interests menuitem">
+                                <a href="interests.html" class="hvr-sweep-to-left"><i class="fa-solid fa-star"
+                                        aria-hidden="true"></i><span>Interests</span></a>
+                            </li>
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-download menuitem">
+                                <a href="assets/cv/cv.pdf" class="hvr-sweep-to-left" target="_blank"><i
+                                        class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>
+                                        CV</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -------------- Header Image --------------  -->
+
+            <a href="index.html" class="col-md-4 logo"></a>
+        </div>
+    </header>
+
+    <!--  Section  -->
+    <section class="container-fluid">
+        <div class="row bg-color-github">
+            <div class="col">
+                <h3 class="github-heading uppercase text-center">View my Projects on GitHub</h3>
+                <h5 class="uppercase text-center">You can also search for other GitHub users</h5>
+
+                <div class="center-form-gh">
+                    <input type="text" id="gh-username" value="SoroushGReza" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="container-fluid">
+        <div class="row" id="overall-footer">
+
+            <!--  -------------- About --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">Junior Full Stack Software Developer. Proficient in <span
+                        class="bold">Python</span>, <span class="bold">JavaScript</span>, <span class="bold">CSS</span>,
+                    <span class="bold">HTML</span>, and hands-on experience with frameworks and libraries such as <span
+                        class="bold">Django</span>, <span class="bold">Bootstrap</span>, <span class="bold">Flask</span>
+                    and
+                    <span class="bold">React</span> among others.
+                </p>
+            </div>
+
+            <!--  -------------- Download --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Printable version of my CV
+                    <a href="assets/cv/cv.pdf" target="_blank" class="cv-pdf">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Download link./span>
+                    </a>
+                </p>
+            </div>
+
+            <!--  -------------- Find me on --------------  -->
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Find me on</h5>
+                <ul class="list-inline find-me-links">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/s-gholamreza/" target="_blank">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/SoroushGReza" target="_blank">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

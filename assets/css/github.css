@@ -1,0 +1,24 @@
+/* ---------------  GitHub  ---------------*/
+
+/* --- Background Color --- */
+
+.bg-color-github {
+    background-color: #fafafa;
+}
+
+/* --- Heading --- */
+
+.github-heading {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* --- GitHub Search Input --- */
+
+.center-form-gh {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}

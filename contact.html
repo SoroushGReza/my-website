@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "illX_fSfpPn5u0SB1",
+            });
+        })();
+    </script>
     <title>Soroush</title>
 </head>
 
@@ -23,7 +33,7 @@
 
             <!--  -------------- Name and Title --------------  -->
             <div class="col-md-8">
-                <div class="row bg-color-name-title no-gutters">
+                <div class="row bg-color-name-title no-gutters row-name-title">
                     <div class="col heading">
                         <h1 class="name">Soroush Gholamreza</h1>
                         <h2 class="title">Junior Full Stack Developer</h2>
@@ -47,14 +57,13 @@
                                 <a href="contact.html" class="hvr-sweep-to-left"><i class="fa-solid fa-envelope"
                                         aria-hidden="true"></i><span>Contact</span></a>
                             </li>
-
+                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-portfolio menuitem">
+                                <a href="portfolio.html" class="hvr-sweep-to-left"><i class="fa-solid fa-briefcase"
+                                        aria-hidden="true"></i><span>Portfolio</span></a>
+                            </li>
                             <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-github menuitem">
                                 <a href="github.html" class="hvr-sweep-to-left"><i class="fa-brands fa-github"
                                         aria-hidden="true"></i><span>GitHub</span></a>
-                            </li>
-                            <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-interests menuitem">
-                                <a href="interests.html" class="hvr-sweep-to-left"><i class="fa-solid fa-star"
-                                        aria-hidden="true"></i><span>Interests</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 list-inline-item ui-menu-color-download menuitem">
                                 <a href="assets/cv/cv.pdf" class="hvr-sweep-to-left" target="_blank"><i

@@ -1,6 +1,11 @@
 /*    --------------- contact ---------------    */
 
-/* Background color */
+
+/*   Fonts   */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+/*  Background color  */
 
 .bg-color-contact {
     background-color: #fafafa;
@@ -29,11 +34,48 @@
 
 
 /*  Send Request Button  */
+
 .send-request-btn {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #722900;
+}
+
+.send-request-btn:hover {
+    color: #fafafa;
+    background-color: #531e00;
+}
+
+
+/*  Alert Message  */
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: none;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border-color: #005115;
+    background-color: #007a21;
+    font-family: "Dosis", sans-serif;
+}
+
+
+/*  Alert Message Close Button  */
+
+.close {
+    cursor: pointer;
+    padding: 0 5px;
 }
 
 
@@ -46,5 +88,5 @@
         margin: 0 auto;
         max-width: 50%;
     }
-    
+
 }

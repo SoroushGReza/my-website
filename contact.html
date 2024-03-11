@@ -90,10 +90,10 @@
                 <div class="center-form">
                     <form onsubmit="return sendEmail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
-                            required />
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control"
+                            placeholder="Email" required />
                         <textarea name="projectsummary" id="projectsummary" rows="5" class="form-control"
-                            placeholder="Project desctription" required></textarea>
+                            placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button type="submit" class="btn send-request-btn">Send Request</button>
@@ -154,7 +154,15 @@
             </div>
         </div>
     </footer>
+
+    <!----  Script  ---->
     <script src="assets/js/sendEmail.js"></script>
+
+    <!----  Alert Message  ---->
+    <div class="alert alert-success" role="alert">
+        Request sent successfully <button type="button" class="close" onclick="closeAlert()">&times;</button>
+    </div>
+
 </body>
 
 </html>

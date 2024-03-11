@@ -1,5 +1,29 @@
+/* ----------------------- Portfolio  ------*/
+
+/* ----- Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+/* ----------------- */
+
 .portfolio-preview {
     width: 100%;
     margin-right: 8px;
     padding-left: 0;
+}
+
+
+/* ------- Project heading ------- */
+
+.project-heading {
+    margin-bottom: 18px;
+    font-family: "Truculenta", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+/* ------- Project <div> ------- */
+
+.project-div {
+    margin-top: 8px;
+    margin-bottom: 43px;
 }

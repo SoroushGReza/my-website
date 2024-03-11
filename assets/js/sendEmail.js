@@ -15,4 +15,5 @@ function sendEmail(contactForm) {
         console.log("FAILED", error);
       }
     );
+    return false;
 }

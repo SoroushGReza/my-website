@@ -288,3 +288,43 @@
 
 
 /* ----------------------------- END OF MEDIA QUERIES ----------------------------- */
+
+
+
+/* --------------------- CONTRIBUTORS --------------------- */
+
+.github-contributors {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+    .github-contributors .contributor {
+        pointer-events: auto;
+        margin: 0 10px;
+    }
+
+/* Ensure carousel controls are above the overlay and clickable */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 2;
+}
+
+/* Prevent the controls from blocking the contributors */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Prevent contributors from becoming too large on bigger screens */
+.github-contributors .contributor img {
+    max-width: 100px;
+    max-height: 100px;
+}

@@ -84,3 +84,5 @@ function fetchGitHubInformation(event) {
 // Show default profile when page loads
 
 $(document).ready(fetchGitHubInformation);
+
+function displayContributors(usernames) {

@@ -35,6 +35,7 @@ function repoInformationHTML(repos) {
 }
 
 //    Fetch GitHub Info
+
 function fetchGitHubInformation(event) {
     $("#gh-user-data").html("");
     $("#gh-repo-data").html("");
@@ -94,17 +95,32 @@ function displayContributors(usernames) {
     $.when(...userDataPromises).then(function (...responses) {
         let usersData = responses.map(response => response[0]);
         let contributorsHTML = usersData.map(user => `
-      <div class="gh-avatar" style="display: inline-block; padding: 10px;">
-          <a href="${user.html_url}" target="_blank">
-              <img src="${user.avatar_url}" width="100" height="100" alt="${user.login}" />
-          </a>
-          <p>@${user.login}</p>
-      </div>
-    `).join('');
-        $("#carouselProject6 .carousel-inner .carousel-item:nth-child(2)").append(`<div class="carousel-caption">${contributorsHTML}</div>`);
+            <div class="contributor" style="flex: 0 0 auto; margin: 1vw; text-align: center;">
+                <a href="${user.html_url}" target="_blank" style="display: block; margin-bottom: 0.5vw;">
+                    <img src="${user.avatar_url}" style="width: 4vw; height: 4vw; object-fit: cover; border-radius: 50%;" alt="${user.login}">
+                </a>
+                <p style="color: white; font-size: 0.9vw;">@${user.login}</p>
+            </div>
+        `).join('');
+
+        var carouselSecondItem = $("#carouselProject6 .carousel-inner .carousel-item:nth-child(2)");
+        carouselSecondItem.find('.carousel-caption').remove();
+        carouselSecondItem.append(`
+            <div class="carousel-caption github-contributors d-flex flex-row flex-wrap align-items-center justify-content-center" style="left: 0; right: 0; bottom: 0; top: 0;">
+                ${contributorsHTML}
+            </div>
+        `);
+
+        // Manually attach click events to the carousel controls
+        $("#carouselProject6 .carousel-control-prev").click(function () {
+            $("#carouselProject6").carousel("prev");
+        });
+        $("#carouselProject6 .carousel-control-next").click(function () {
+            $("#carouselProject6").carousel("next");
+        });
     });
 }
 
 $(document).ready(function () {
-    displayContributors(['SoroushGReza', 'username2', 'username3', 'username4', 'username5']);
+    displayContributors(['A-Hoenig', 'kosamad', 'SoroushGReza', 'BreakellrZ', 'MeganRoberts-dev']);
 });

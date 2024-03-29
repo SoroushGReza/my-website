@@ -106,7 +106,7 @@ header {
 }
 
 .fancy {
-    background-image: url(assets/images/name-bg.png);
+    background-image: url(../images/name-bg.png);
     background-size: 110% auto;
     background-position: center;
     color: transparent;

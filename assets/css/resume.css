@@ -10,7 +10,7 @@
 
 .fa-tv {
     font-size: 26px;
-    color: #a10000;
+    color: #192a3a;
 }
 
 
@@ -18,7 +18,7 @@
 
 .fa-gears {
     font-size: 26px;
-    color: #a10000;
+    color: #192a3a;
 }
 
 
@@ -72,7 +72,7 @@
 /* ----------------------------------------Work Experience */
 
 .bg-color-work-experience {
-    background-color: #006427;
+    background-color: #c7c7b8;
 }
 
 .work-experience-heading {
@@ -81,7 +81,7 @@
     margin-top: 25px;
     margin-bottom: 55px;
     font-size: 30px;
-    color: #ffffff;
+    color: ##1a1a1a;
 }
 
 /*  Work History Timeline  */
@@ -89,7 +89,7 @@
 .timeline-item {
     padding: 4.3em 2em 0em 2em;
     position: relative;
-    color: #fafafa;
+    color: #626262;
     border-left: 1px solid;
 }
 
@@ -111,31 +111,32 @@
     padding: 0;
 }
 
-.timeline-item:after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background-color: #fafafa;
-}
+    .timeline-item:after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 2.4em;
+        position: absolute;
+        left: -6px;
+        border-radius: 12px;
+        content: '';
+        background-color: #626262;
+    }
 
 /*  Studies Timeline  */
 
 .timeline-item-studies {
     padding: 4.3em 2em 0em 2em;
     position: relative;
-    color: #c8ff00;
+    color: #1a8304;
     border-left: 1px solid;
 }
 
-.timeline-item-studies p {
-    padding: 0;
-    margin: 0;
-}
+    .timeline-item-studies p {
+        padding: 0;
+        margin: 0;
+        color: #1a8304;
+    }
 
 .timeline-item-studies:before {
     content: attr(data-dates);
@@ -150,21 +151,21 @@
     padding: 0;
 }
 
-.timeline-item-studies:after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background-color: #c8ff00;
-}
+    .timeline-item-studies:after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 2.4em;
+        position: absolute;
+        left: -6px;
+        border-radius: 12px;
+        content: '';
+        background-color: #1a8304;
+    }
 
 .studies {
     font-size: 12px;
-    color: #c8ff00;
+    color: #059777;
 }
 
 /* Dropdowm Diploma */
@@ -193,12 +194,12 @@
 .fa-circle-chevron-down {
     margin-left: 5px;
     cursor: pointer;
-    color: #fafafa;
+    color: #0e5000;
 }
 
-.fa-circle-chevron-down:hover {
-    color: #bdbdbd;
-}
+    .fa-circle-chevron-down:hover {
+        color: #082b00;
+    }
 
 .history-items {
     margin-bottom: 30px;

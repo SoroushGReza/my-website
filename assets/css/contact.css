@@ -39,13 +39,13 @@
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #722900;
+    background-color: #517aa0;
 }
 
-.send-request-btn:hover {
-    color: #fafafa;
-    background-color: #531e00;
-}
+    .send-request-btn:hover {
+        color: #fafafa;
+        background-color: #2d4257;
+    }
 
 
 /*  Alert Message  */

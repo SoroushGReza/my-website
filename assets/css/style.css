@@ -29,36 +29,41 @@ html, body {
 }
 
 .bg-color-personal-info {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 /*------------ Nav links*/
 
+/*--- Actice Links ---*/
+
+.active {
+    box-shadow: 0px -8px 36px -3px #e6c9a2c1;
+}
 
 
 /* ----- NavBar with same col-4 sections -----*/
 .ui-menu-color-home {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 .ui-menu-color-resume {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 .ui-menu-color-contact {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 .ui-menu-color-portfolio {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 .ui-menu-color-github {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 .ui-menu-color-download {
-    background-color: #c7c7b7;
+    background-color: #192a3a;
 }
 
 
@@ -153,14 +158,14 @@ header {
     .menuitem a {
         width: 100%;
         text-decoration: none;
-        color: #252525;
+        color: whitesmoke;
         height: 83px;
     }
 
         .menuitem a i {
             padding-top: 22px;
             display: block;
-            color: #192a3a;
+            color: whitesmoke;
             font-size: 26px;
         }
 
@@ -263,7 +268,7 @@ footer {
 }
 
     .cv-pdf i:hover {
-        color: rgb(5, 94, 0);
+        color: rgb(0, 83, 122);
     }
 
 /* --------  Find Me On  -------- */
@@ -315,11 +320,15 @@ footer {
 
 /*------------------------------------------------ Personal Info */
 
+.col4-section-heading {
+    color: whitesmoke;
+}
+
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
     clear: both;
-    color: #000000;
+    color: whitesmoke;
 }
 
 .personal-info-item-with-icon {
@@ -366,7 +375,7 @@ footer {
 
 .personal-info-icon {
     font-size: larger;
-    color: #007a2f;
+    color: #00c14a;
 }
 
 

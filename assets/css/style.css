@@ -34,12 +34,21 @@ html, body {
 
 /*------------ Nav links*/
 
-/*--- Actice Links ---*/
+/*--- Actice / Inactive Links ---*/
 
 .active {
-    box-shadow: 0px -8px 36px -3px #e6c9a2c1;
+    box-shadow: 0px -5px 76px -3px #ffffff98;
 }
 
+.menuitem.active a,
+.menuitem.active a i,
+.menuitem.active a span {
+    color: #a3ff94ff;
+}
+
+.inactive {
+    z-index: 1;
+}
 
 /* ----- NavBar with same col-4 sections -----*/
 .ui-menu-color-home {

@@ -210,6 +210,7 @@ h4 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     color: #fafafa;
+    font-size: 16px;
 }
 
 .inline-block {
@@ -257,6 +258,7 @@ footer {
     color: #7c7c7c;
     min-height: 120px;
     margin: 0;
+    font-size: 12px;
 }
 
 #overall-footer {
@@ -390,20 +392,18 @@ footer {
 
 /* ----------------------- Media Queries ----------------------- */
 
-/* ---- Change logo image on smaller screens ---- */
+/* ---- Title ---- */
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+}
+
+/* ---- Hide logo image on smaller screens ---- */
 
 @media (max-width: 768px) {
     .logo {
-        background: url("../images/2.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 190px;
-        transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -webkit-transition: all .5s ease-in-out;
-        margin-top: -5px;
-        background-color: #000000;
+        display: none;
     }
 }
 

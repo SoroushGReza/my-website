@@ -82,6 +82,7 @@
     margin-bottom: 55px;
     font-size: 30px;
     color: whitesmoke;
+    text-align: center;
 }
 
 /*  Work History Timeline  */
@@ -201,4 +202,31 @@
 
 .history-items {
     margin-bottom: 30px;
+}
+
+
+/* ----------------------- Media Queries ----------------------- */
+
+/* ---- Work Experience ---- */
+@media (min-width: 768px) and (max-width: 1117px) {
+    .work-experience-heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .timeline-item {
+        font-size: 13px;
+    }
+
+    .timeline-item h4 {
+        font-size: 16px;
+    }
+
+    .timeline-item-studies {
+        font-size: 13px;
+    }
+
+    .timeline-item-studies h4 {
+        font-size: 16px;
+    }
 }

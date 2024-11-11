@@ -232,8 +232,10 @@ h4 {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 55px;
+    margin-left: 15px;
     font-size: 30px;
     color: #1a1a1a;
+
 }
 
 
@@ -333,6 +335,7 @@ footer {
 
 .col4-section-heading {
     color: whitesmoke;
+    text-align: center;
 }
 
 .personal-info-item {
@@ -392,6 +395,22 @@ footer {
 
 /* ----------------------- Media Queries ----------------------- */
 
+/* ---- Personal Info ---- */
+@media (min-width: 768px) and (max-width: 970px) {
+    .col4-section-heading {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .personal-info-item .key {
+        font-size: 13px;
+    }
+
+    .personal-info-item .value {
+        font-size: 11px;
+    }
+}
+
 /* ---- Title ---- */
 @media (max-width: 768px) {
     .title {
@@ -403,6 +422,12 @@ footer {
 
 @media (max-width: 768px) {
     .logo {
+        display: none;
+    }
+}
+
+@media (min-width: 958px) and (max-width: 1200px) {
+    .personal-info-icon.fa-square-whatsapp {
         display: none;
     }
 }

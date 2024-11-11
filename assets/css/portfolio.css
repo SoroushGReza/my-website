@@ -220,7 +220,14 @@
 /* ----------------------------- Media Queries ----------------------------- */
 
 /* Under development Badge on smaller screens */
-@media (max-width: 1000px) {
+
+@media (min-width: 350px) and (max-width: 469px) {
+    .status-badge {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
     .status-badge {
         display: none;
     }

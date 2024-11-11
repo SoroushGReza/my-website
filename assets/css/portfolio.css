@@ -16,6 +16,24 @@
     padding-left: 0;
 }
 
+/* ------- Under Development Badge Wrapper ------- */
+.project-title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* --- Under Development Badge --- */
+.status-badge {
+    background-color: #33578e;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: fit-content;
+    display: inline;
+    margin-bottom: 5px;
+}
+
 
 /* ------- Project heading container ------- */
 
@@ -30,7 +48,8 @@
     font-weight: 300;
     font-family: "Averia Sans Libre", sans-serif;
     font-size: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
+
 }
 
 
@@ -200,40 +219,50 @@
 
 /* ----------------------------- Media Queries ----------------------------- */
 
-
-/* ----- Tech Chart Media Queries -----*/
-
-/* ----- Project Heading */
-
-@media (min-width: 350px) and (max-width:450px) {
-    .project-heading {
-        font-size: 12px;
+/* Under development Badge on smaller screens */
+@media (max-width: 1000px) {
+    .status-badge {
+        display: none;
     }
 }
 
-@media (min-width: 451px) and (max-width:600px) {
+/* ----- Project Heading */
+
+@media (min-width: 250px) and (max-width:350px) {
     .project-heading {
         font-size: 20px;
     }
 }
 
-/* ----- Chart -----*/
+@media (min-width: 451px) and (max-width:600px) {
+    .project-heading {
+        font-size: 25px;
+    }
+}
+
+/* ----- Tech Chart -----*/
+
+@media (min-width: 350px) and (max-width: 499px) {
+    .simple-bar-chart {
+        transform: scale(0.50) translateY(80px);
+    }
+}
 
 @media (min-width: 500px) and (max-width: 600px) {
     .simple-bar-chart {
-        transform: scale(0.40) translateY(160px);
+        transform: scale(0.80) translateY(30px);
     }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
     .simple-bar-chart {
-        transform: scale(0.45) translateY(100px);
+        transform: scale(0.80) translateY(-10px);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
     .simple-bar-chart {
-        transform: scale(0.60) translateY(65px);
+        transform: scale(0.75) translateY(55px);
     }
 }
 
@@ -248,7 +277,7 @@
 
 @media (min-width: 500px) and (max-width: 869px) {
     .label {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -257,7 +286,7 @@
 
 @media (min-width: 500px) and (max-width: 869px) {
     .value {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -274,6 +303,19 @@
     .carousel-indicators {
         transform: scale(0.75);
         bottom: -20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 499px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: scale(0.55);
+    }
+
+    .carousel-indicators {
+        transform: scale(0.75);
+        bottom: -10px;
     }
 }
 

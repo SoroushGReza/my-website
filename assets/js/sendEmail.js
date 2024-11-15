@@ -11,15 +11,10 @@ function sendEmail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
-        //    Show alert message
-        var alertBox = document.querySelector(".alert");
-        alertBox.style.display = "block";
-        //    Reset form
-        contactForm.reset();
-        //    Close Alert after 8 seconds per auto
-        setTimeout(function () {
-          alertBox.style.display = "none";
-        }, 8000);
+        // Hide Contact section
+        document.getElementById("contact-section").style.display = "none";
+        // Show Verifications message instead
+        document.getElementById("thank-you-message").style.display = "block";
       },
       function (error) {
         console.log("FAILED", error);
@@ -27,9 +22,4 @@ function sendEmail(contactForm) {
     );
 
   return false;
-}
-
-//    Close alert message manually
-function closeAlert() {
-  document.querySelector(".alert").style.display = "none";
 }

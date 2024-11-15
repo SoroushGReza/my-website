@@ -1,95 +1,77 @@
 /*    --------------- contact ---------------    */
 
-
 /*   Fonts   */
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 /*  Background color  */
 
 .bg-color-contact {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 /*  Heading  */
 
 .contact-heading {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 /* ------ Margin between form inputs ------*/
 
 .form-control {
-    margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    border: none;
-    background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: none;
+  background-color: white;
 }
 
 .center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 70%;
 }
-
 
 /*  Send Request Button  */
 
 .send-request-btn {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #517aa0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  background-color: #517aa0;
 }
 
-    .send-request-btn:hover {
-        color: #fafafa;
-        background-color: #2d4257;
-    }
-
-
-/*  Alert Message  */
-
-.alert {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    display: none;
-    max-width: 300px;
-    min-width: 300px;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
-    border-color: #005115;
-    background-color: #007a21;
-    font-family: "Dosis", sans-serif;
+.send-request-btn:hover {
+  color: #fafafa;
+  background-color: #2d4257;
 }
 
-
-/*  Alert Message Close Button  */
-
-.close {
-    cursor: pointer;
-    padding: 0 5px;
+/* -- Verification Message -- */
+#thank-you-message {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #192b3b;
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+#thank-you-message i {
+  font-size: 50px;
+  color: #09b21a;
+  margin-bottom: 15px;
+}
 
 /* ---------- Media Queries ---------- */
 
-@media(min-width: 992px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 50%;
-    }
-
+@media (min-width: 992px) {
+  .center-form {
+    padding-top: 30px;
+    min-height: 240px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
 }

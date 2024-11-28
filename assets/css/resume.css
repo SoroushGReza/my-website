@@ -29,12 +29,11 @@
 
 /* -------- Awards Image -------- */
 .award-image {
-    max-width: 100%; 
+    max-width: 70%; 
     height: auto; 
     object-fit: cover;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 10%;
 }
 
 
@@ -235,6 +234,12 @@
 
 
 /* ----------------------- Media Queries ----------------------- */
+
+@media (min-width: 768px) and (max-width: 968px) {
+    .section-paragraphs {
+        font-size: 12px;
+    }
+}
 
 /* ---- Work Experience ---- */
 @media (min-width: 768px) and (max-width: 1117px) {

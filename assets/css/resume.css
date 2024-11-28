@@ -21,6 +21,22 @@
     color: #192a3a;
 }
 
+/* -------- Awards Icon -------- */
+.fa-medal {
+    font-size: 26px;
+    color: #192a3a;
+}
+
+/* -------- Awards Image -------- */
+.award-image {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+
 
 /* -------- Skills -------- */
 
@@ -122,6 +138,19 @@
         border-radius: 12px;
         content: '';
         background-color: white;
+    }
+
+    .job-bullet-points {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 0;
+        padding-left: 18px;
+        line-height: 1.6;
+        list-style-type: disc;
+    }
+    
+    .timeline-item ul {
+        margin-bottom: 0;
     }
 
 /*  Studies Timeline  */
@@ -228,5 +257,6 @@
 
     .timeline-item-studies h4 {
         font-size: 16px;
+
     }
 }

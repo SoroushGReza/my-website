@@ -19,6 +19,21 @@
   margin-bottom: 20px;
 }
 
+/* --- Slide in text Animation --- */
+.slide-in-text {
+  transform: translateX(-100%);
+  animation: slideIn 2s forwards;
+}
+
+.slide-in-text2 {
+  transform: translateX(-100%);
+  animation: slideIn 4s forwards;
+}
+
+@keyframes slideIn {
+  to { transform: translateX(0); }
+}
+
 /* ------ Margin between form inputs ------*/
 
 .form-control {

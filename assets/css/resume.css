@@ -290,3 +290,47 @@
 
     }
 }
+
+/* --------- Contact image with wawe effect --------- */
+
+/* Container for wave effect */
+.wave-effect-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Contact Image */
+.contact-image {
+    width: 100%;
+    height: auto;
+    animation: waveEffect 5s infinite linear;
+    filter: brightness(0.9);
+}
+
+/* Wave Animation */
+@keyframes waveEffect {
+    0% {
+        transform: translate(0, 0) scale(1);
+        filter: blur(0px) brightness(1);
+    }
+    25% {
+        transform: translate(-5px, 5px) scale(1.01);
+        filter: blur(2px);
+    }
+    50% {
+        transform: translate(5px, -5px) scale(1.02);
+        filter: blur(3px);
+    }
+    75% {
+        transform: translate(-5px, 5px) scale(1.01);
+        filter: blur(2px);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+        filter: blur(0px) brightness(1);
+    }
+}

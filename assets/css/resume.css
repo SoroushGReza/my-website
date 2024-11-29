@@ -235,6 +235,31 @@
 
 /* ----------------------- Media Queries ----------------------- */
 
+/* ---- Skills ---- */
+@media (min-width: 768px) and (max-width: 810px) {
+    .skills-h5 {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 545px) {
+    .skills-h5 {
+        font-size: 16px;
+    }
+    .technical-skillset{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 460px) {
+    .skills-h5 {
+        font-size: 14px;
+    }
+    .technical-skillset{
+        font-size: 12px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 968px) {
     .section-paragraphs {
         font-size: 12px;

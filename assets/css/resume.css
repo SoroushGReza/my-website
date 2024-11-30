@@ -232,6 +232,76 @@
     margin-bottom: 30px;
 }
 
+/* --------- Contact image with float effect --------- */
+
+/* Container for dynamic effect */
+.float-effect-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Contact Image */
+.contact-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatImage 6s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+/* Hover Zoom Effect */
+.float-effect-container:hover .contact-image {
+    animation: none;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Moving Background Overlay */
+.float-effect-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 15%, transparent 70%),
+                radial-gradient(circle, rgba(0, 255, 255, 0.3) 20%, transparent 80%);
+    background-size: 30% 30%;
+    animation: moveBackground 8s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Floating effect for image */
+@keyframes floatImage {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, calc(-50% - 10px));
+    }
+}
+
+/* Animated Background Movement */
+@keyframes moveBackground {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-10px, 10px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
 
 /* ----------------------- Media Queries ----------------------- */
 
@@ -291,46 +361,26 @@
     }
 }
 
-/* --------- Contact image with wawe effect --------- */
+/* --------- Contact image with float effect --------- */
 
-/* Container for wave effect */
-.wave-effect-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    overflow: hidden;
+/* On small screens */
+@media (max-width: 576px) {
+    .float-effect-container {
+        width: 160px;
+        height: 80px;
+    }
 }
 
-/* Contact Image */
-.contact-image {
-    width: 100%;
-    height: auto;
-    animation: waveEffect 5s infinite linear;
-    filter: brightness(0.9);
+/* On medium size screen */
+@media (min-width: 577px) and (max-width: 768px) {
+    .float-effect-container {
+        height: 130px;
+    }
 }
 
-/* Wave Animation */
-@keyframes waveEffect {
-    0% {
-        transform: translate(0, 0) scale(1);
-        filter: blur(0px) brightness(1);
-    }
-    25% {
-        transform: translate(-5px, 5px) scale(1.01);
-        filter: blur(2px);
-    }
-    50% {
-        transform: translate(5px, -5px) scale(1.02);
-        filter: blur(3px);
-    }
-    75% {
-        transform: translate(-5px, 5px) scale(1.01);
-        filter: blur(2px);
-    }
-    100% {
-        transform: translate(0, 0) scale(1);
-        filter: blur(0px) brightness(1);
+/* on big screens */
+@media (min-width: 769px) and (max-width: 1600px) {
+    .float-effect-container {
+        height: 120px; 
     }
 }

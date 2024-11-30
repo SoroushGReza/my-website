@@ -24,38 +24,54 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-//     ----------------- Project Details Drop-Down
+// ----------------- Project Details Drop-Down
 
 $(document).ready(function () {
-  // Toggle button and dropdown content based on the button's data-target attribute
-  $(".btn-details").click(function () {
-    var $this = $(this);
-    var targetSelector = $this.attr("data-target");
-    var $dropdownContent = $(targetSelector);
+  var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    // Toggle visibility of the dropdown content and button
-    $dropdownContent
-      .collapse("toggle")
-      .on("shown.bs.collapse", function () {
-        $this.hide();
-      })
-      .on("hidden.bs.collapse", function () {
-        $this.show();
-      });
-  });
+  $('.project-div').each(function () {
+      var $projectDiv = $(this);
+      var $collapseDiv = $projectDiv.find('.collapse');
 
-  // Hide dropdown content when clicking outside of it
-  $(document).click(function (event) {
-    if (!$(event.target).closest(".btn-details, .collapse").length) {
-      // Iterate through each dropdown to hide and show the respective button
-      $(".collapse").each(function () {
-        var $this = $(this);
-        if ($this.hasClass("show")) {
-          $this.collapse("hide");
-          // Find the button that controls this dropdown and show it
-          $('button[data-target="#' + $this.attr("id") + '"]').show();
-        }
-      });
-    }
+      var isClicked = false;
+
+      if (isTouchDevice) {
+          // On touch devices, open details on tap
+          $projectDiv.on('click', function (e) {
+              // Prevent clicks on carousel controls from toggling details
+              if ($(e.target).closest('.carousel-control-prev, .carousel-control-next').length === 0) {
+                  e.stopPropagation();
+                  $collapseDiv.collapse('toggle');
+              }
+          });
+      } else {
+          // On desktop devices, open details on hover and click
+          $projectDiv.on('mouseenter', function () {
+              if (!isClicked) {
+                  $collapseDiv.collapse('show');
+              }
+          }).on('mouseleave', function () {
+              if (!isClicked) {
+                  $collapseDiv.collapse('hide');
+              }
+          });
+
+          $projectDiv.on('click', function (e) {
+              // Prevent clicks on carousel controls from toggling details
+              if ($(e.target).closest('.carousel-control-prev, .carousel-control-next').length === 0) {
+                  e.stopPropagation();
+                  isClicked = !isClicked;
+                  $collapseDiv.collapse('show');
+              }
+          });
+
+          // Close the collapse when clicking outside
+          $(document).on('click', function (e) {
+              if (isClicked && !$(e.target).closest($projectDiv).length) {
+                  isClicked = false;
+                  $collapseDiv.collapse('hide');
+              }
+          });
+      }
   });
 });

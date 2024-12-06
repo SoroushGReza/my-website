@@ -3,377 +3,402 @@
 /*  ------ General ------  */
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* ----- Fonts ----- */
-@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 /* ----------------- */
 
 .portfolio-preview {
-    width: 100%;
-    margin-right: 8px;
-    padding-left: 0;
+  width: 100%;
+  margin-right: 8px;
+  padding-left: 0;
 }
 
 /* ------- Under Development Badge Wrapper ------- */
 .project-title-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* --- Under Development Badge --- */
 .status-badge {
-    background-color: #33578e;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    width: fit-content;
-    display: inline;
-    margin-bottom: 5px;
+  background-color: #33578e;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  width: fit-content;
+  display: inline;
+  margin-bottom: 5px;
 }
 
+/* ---- Demo App Text ---- */
+.demo-app {
+  font-size: 1.3em;
+  font-family: "Averia Sans Libre", sans-serif;
+  text-align: center;
+  color: #854905;
+  padding-top: 15px;
+}
+
+.credentials-list {
+  list-style-type:circle;
+  margin: 0; 
+  padding: 0;
+  font-size: 14px;
+}
+
+.alert-info ul {
+  padding-left: 20px; 
+  margin: 0;
+}
+
+.custom-list {
+    list-style-type: circle;
+    padding: 0;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+/* ---- Main App Text ---- */
+.main-app {
+  font-size: 1.3em;
+  font-family: "Averia Sans Libre", sans-serif;
+  text-align: center;
+  color: #33578e;
+  padding-top: 15px;
+}
 
 /* ------- Project heading container ------- */
 
 .project-heading-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .project-heading {
-    margin-right: 16px;
-    font-weight: 300;
-    font-family: "Averia Sans Libre", sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
-
+  margin-right: 16px;
+  font-weight: 300;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
-
 
 /* ------- Project links ------- */
 
 .project-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-    .project-links a {
-        text-decoration: none;
-        color: #676767;
-        font-size: 15px;
-        margin-right: 16px;
-    }
+.project-links a {
+  text-decoration: none;
+  color: #676767;
+  font-size: 15px;
+  margin-right: 16px;
+}
 
-        .project-links a:hover {
-            color: #029200;
-        }
-
+.project-links a:hover {
+  color: #029200;
+}
 
 /* ------- Project <div> ------- */
 
 .project-div {
-    margin-top: 8px;
-    margin-bottom: 53px;
+  margin-top: 8px;
+  margin-bottom: 53px;
 }
 
 /* -------- Project Slides -------- */
 
 .slide-1-text {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .slide-3-heading-1 {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 /* ---------------- Tech Chart ---------------- */
 
 .simple-bar-chart {
-    --line-count: 10;
-    --line-color: currentcolor;
-    --line-opacity: 0.25;
-    --item-gap: 6%;
-    --item-default-color: #060606;
-    height: 10rem;
-    display: grid;
-    grid-auto-flow: column;
-    gap: var(--item-gap);
-    align-items: end;
-    padding-inline: var(--item-gap);
-    --padding-block: 1.5rem;
-    /*space for labels*/
-    padding-block: var(--padding-block);
-    position: relative;
-    isolation: isolate;
+  --line-count: 10;
+  --line-color: currentcolor;
+  --line-opacity: 0.25;
+  --item-gap: 6%;
+  --item-default-color: #060606;
+  height: 10rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--item-gap);
+  align-items: end;
+  padding-inline: var(--item-gap);
+  --padding-block: 1.5rem;
+  /*space for labels*/
+  padding-block: var(--padding-block);
+  position: relative;
+  isolation: isolate;
 }
 
-    .simple-bar-chart::after {
-        content: "";
-        position: absolute;
-        inset: var(--padding-block) 0;
-        z-index: -1;
-        --line-width: 1px;
-        --line-spacing: calc(100% / var(--line-count));
-        background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
-        box-shadow: 0 var(--line-width) 0 var(--line-color);
-        opacity: var(--line-opacity);
-    }
+.simple-bar-chart::after {
+  content: "";
+  position: absolute;
+  inset: var(--padding-block) 0;
+  z-index: -1;
+  --line-width: 1px;
+  --line-spacing: calc(100% / var(--line-count));
+  background-image: repeating-linear-gradient(
+    to top,
+    transparent 0 calc(var(--line-spacing) - var(--line-width)),
+    var(--line-color) 0 var(--line-spacing)
+  );
+  box-shadow: 0 var(--line-width) 0 var(--line-color);
+  opacity: var(--line-opacity);
+}
 
-    .simple-bar-chart > .item {
-        height: calc(1% * var(--val));
-        background-color: var(--clr, var(--item-default-color));
-        position: relative;
-        animation: item-height 1s ease forwards
-    }
+.simple-bar-chart > .item {
+  height: calc(1% * var(--val));
+  background-color: var(--clr, var(--item-default-color));
+  position: relative;
+  animation: item-height 1s ease forwards;
+}
 
 @keyframes item-height {
-    from {
-        height: 0
-    }
+  from {
+    height: 0;
+  }
 }
 
 .simple-bar-chart > .item > * {
-    position: absolute;
-    text-align: center
+  position: absolute;
+  text-align: center;
 }
 
 .simple-bar-chart > .item > .label {
-    inset: 100% 0 auto 0
+  inset: 100% 0 auto 0;
 }
 
 .simple-bar-chart > .item > .value {
-    inset: auto 0 100% 0
+  inset: auto 0 100% 0;
 }
-
 
 /* ------------------ More Details Drop-Down ------------------ */
 
 /* ---- Drop-Down Button ---- */
 
 .btn-details {
-    color: rgb(206, 206, 206);
-    background-color: rgb(66, 66, 66);
-    border: none;
+  color: rgb(206, 206, 206);
+  background-color: rgb(66, 66, 66);
+  border: none;
 }
 
-    .btn-details:hover {
-        color: rgb(7, 193, 193);
-        border: none;
-        background-color: rgb(66, 66, 66);
-    }
-
+.btn-details:hover {
+  color: rgb(7, 193, 193);
+  border: none;
+  background-color: rgb(66, 66, 66);
+}
 
 /* ---- Drop-Down Content ---- */
 
 .dropdown-p {
-    margin-top: 0;
-    margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .collapse {
-    width: 100%;
+  width: 100%;
 }
 
 .card {
-    width: 100%;
-    border-radius: 0 0 2px 2px;
-    border: 1px solid rgba(128, 128, 128, 0.321);
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  border: 1px solid rgba(128, 128, 128, 0.321);
 }
 
-    .card > hr {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.card > hr {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .skills-header {
-    font-size: 13px;
-    font-family: Lato, sans-serif;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 13px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .project-skills {
-    display: block;
-    font-family: Lato, sans-serif;
-    font-size: 13px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    font-weight: 400;
+  display: block;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 400;
 }
 
 .fa-diamond {
-    font-size: 7px;
-    color: rgb(138, 92, 0);
-    vertical-align: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
+  font-size: 7px;
+  color: rgb(138, 92, 0);
+  vertical-align: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-
-
 
 /* ----------------------------- Media Queries ----------------------------- */
 
 /* Under development Badge on smaller screens */
 
 @media (min-width: 350px) and (max-width: 469px) {
-    .status-badge {
-        display: none;
-    }
+  .status-badge {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    .status-badge {
-        display: none;
-    }
+  .status-badge {
+    display: none;
+  }
 }
 
 /* ----- Project Heading */
 
-@media (min-width: 250px) and (max-width:350px) {
-    .project-heading {
-        font-size: 20px;
-    }
+@media (min-width: 250px) and (max-width: 350px) {
+  .project-heading {
+    font-size: 20px;
+  }
 }
 
-@media (min-width: 451px) and (max-width:600px) {
-    .project-heading {
-        font-size: 25px;
-    }
+@media (min-width: 451px) and (max-width: 600px) {
+  .project-heading {
+    font-size: 25px;
+  }
 }
 
 /* ----- Tech Chart -----*/
 
 @media (min-width: 350px) and (max-width: 499px) {
-    .simple-bar-chart {
-        transform: scale(0.50) translateY(80px);
-    }
+  .simple-bar-chart {
+    transform: scale(0.5) translateY(80px);
+  }
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
-    .simple-bar-chart {
-        transform: scale(0.80) translateY(30px);
-    }
+  .simple-bar-chart {
+    transform: scale(0.8) translateY(30px);
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-    .simple-bar-chart {
-        transform: scale(0.80) translateY(-10px);
-    }
+  .simple-bar-chart {
+    transform: scale(0.8) translateY(-10px);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    .simple-bar-chart {
-        transform: scale(0.75) translateY(55px);
-    }
+  .simple-bar-chart {
+    transform: scale(0.75) translateY(55px);
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    .simple-bar-chart {
-        transform: scale(0.80) translateY(30px);
-    }
+  .simple-bar-chart {
+    transform: scale(0.8) translateY(30px);
+  }
 }
-
 
 /* ----- Chart Label -----*/
 
 @media (min-width: 500px) and (max-width: 869px) {
-    .label {
-        font-size: 15px;
-    }
+  .label {
+    font-size: 15px;
+  }
 }
-
 
 /* ----- Chart Value -----*/
 
 @media (min-width: 500px) and (max-width: 869px) {
-    .value {
-        font-size: 15px;
-    }
+  .value {
+    font-size: 15px;
+  }
 }
-
 
 /* ----- Carousel Indicators and "Next" & "Previous" btn's -----*/
 
 @media (min-width: 500px) and (max-width: 9000px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transform: scale(0.75);
+  }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        transform: scale(0.75);
-    }
-
-    .carousel-indicators {
-        transform: scale(0.75);
-        bottom: -20px;
-    }
+  .carousel-indicators {
+    transform: scale(0.75);
+    bottom: -20px;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 499px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transform: scale(0.55);
+  }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        transform: scale(0.55);
-    }
-
-    .carousel-indicators {
-        transform: scale(0.75);
-        bottom: -10px;
-    }
+  .carousel-indicators {
+    transform: scale(0.75);
+    bottom: -10px;
+  }
 }
-
 
 /* ------ Item Gap ------*/
 
 @media (min-width: 500px) and (max-width: 700px) {
-    .simple-bar-chart {
-        --item-gap: 10%;
-    }
+  .simple-bar-chart {
+    --item-gap: 10%;
+  }
 }
 
-
 /* ----------------------------- END OF MEDIA QUERIES ----------------------------- */
-
-
 
 /* --------------------- CONTRIBUTORS --------------------- */
 
 .github-contributors {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 
-    .github-contributors .contributor {
-        pointer-events: auto;
-        margin: 0 10px;
-    }
+.github-contributors .contributor {
+  pointer-events: auto;
+  margin: 0 10px;
+}
 
 /* Ensure carousel controls are above the overlay and clickable */
 .carousel-control-prev,
 .carousel-control-next {
-    z-index: 2;
+  z-index: 2;
 }
 
 /* Prevent the controls from blocking the contributors */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+  width: 5%;
 }
 
 /* Prevent contributors from becoming too large on bigger screens */
 .github-contributors .contributor img {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }

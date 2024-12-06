@@ -87,16 +87,117 @@
 
                 <!--------------- Portfolio Page Heading --------------->
                 <h3 class="section-heading uppercase">My Portfolio</h3>
+                <!-- <span class="status-badge">Under Development 🛠</span> -->
 
                 <!------------------------ My Projects ------------------------>
                 <div class="row">
-                    <!------------------ Project 7 ------------------>
+                    <!------------------ Project 8 ------------------>
                     <div class="col-md-6 col-12 project-div">
-
-                        <!-- UNDER DEVELOPMENT -->
                         <div class="project-title-wrapper">
                             <h3 class="project-heading">Nordic Company</h3>
-                            <span class="status-badge">Under Development 🛠</span>
+                            <h5 class="demo-app">Demo App</h5>
+                        </div>
+
+                        <!-- Carousel -->
+                        <div id="carouselProject7" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/Project8-slide1.png" class="d-block w-100 project-image"
+                                        alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Drop-Down Content -->
+                        <div class="collapse" id="collapseDetails8">
+                            <div class="card card-body">
+                                <p class="dropdown-p">
+                                <h4 class="text-center">Welcome to the Demo Version of the Nordic Company Web
+                                    Application!</h4>
+                                <p class="mt-3">
+                                    This is a <strong>demo version</strong> created to allow anyone to explore and
+                                    test the features of the Nordic Company application.
+                                    While the real application will be exclusively used by the client, this demo
+                                    provides full access to core functionalities, including admin capabilities.
+                                </p>
+                                <div class="alert alert-info">
+                                    <h6>Admin Login Credentials:</h6>
+                                    <ul class="credentials-list">
+                                        <li><strong>Email:</strong> <code class="credentials-list">admin@test.com</code>
+                                        </li>
+                                        <li><strong>Password:</strong> <code class="credentials-list">123</code></li>
+                                    </ul>
+                                </div>
+
+                                <h6>Admin Features:</h6>
+                                <ul class="custom-list">
+                                    <li>Create and manage services in three categories: <strong>Hair</strong>,
+                                        <strong>Lashes</strong>, and <strong>Brows</strong>.
+                                    </li>
+                                    <li>Create bookings on behalf of customers.</li>
+                                    <li>Set available time slots for users to book.</li>
+                                </ul>
+                                <h6>User Features:</h6>
+                                <ul class="custom-list">
+                                    <li>Register, update your profile, or delete your account.</li>
+                                    <li>Book one or more services, with the <strong>total price</strong> and
+                                        <strong>total work time</strong> automatically calculated.
+                                    </li>
+                                    <li>Bookings cannot be edited or canceled if less than <strong>8 hours</strong>
+                                        remain before the scheduled time.</li>
+                                </ul>
+                                <p class="mt-2">
+                                    This application was built using <strong>React</strong> for the frontend and
+                                    <strong>Django REST Framework</strong> for the backend.
+                                    The production environment uses <strong>NEON Tech</strong> databse, while
+                                    <strong>SQLite3</strong> is used during development.
+                                </p>
+                                <strong class="text-center" style="color: #854905;">I hope you enjoy exploring this
+                                    application demo!</strong>
+
+                                <div class="container mt-4">
+                                    <div class="alert alert-warning text-center">
+                                        <p><strong>Note:</strong> A more comprehensive README file, detailing the full
+                                            features, setup instructions, and future plans for this application, will be
+                                            created and added soon.</p>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-hr">
+                                <h6 class="text-center skills-header">TECH STACK</h6>
+
+                                <strong class="project-skills">
+                                    JavaScript / ReactJS <i class="fa-solid fa-diamond"></i> Python / Django
+                                    REST Framework
+                                    <i class="fa-solid fa-diamond"></i> API Development <i
+                                        class="fa-solid fa-diamond"></i> Responsive Web Design <i
+                                        class="fa-solid fa-diamond"></i> React Bootstrap <i
+                                        class="fa-solid fa-diamond"></i>
+                                    CSS
+                                </strong>
+
+                                <hr class="dropdown-hr">
+
+                                <h6 class="text-center skills-header">LINKS</h6>
+
+                                <div class="project-links">
+                                    <a href="https://nordic-company-demo-bf7cf172f284.herokuapp.com/" class="live-link"
+                                        target="_blank" title="Live Website">
+                                        <i class="fas fa-globe"></i> Live Website
+                                    </a>
+                                    <a href="https://github.com/SoroushGReza/nordic-company-demo" class="github-link"
+                                        target="_blank" title="GitHub Repo">
+                                        <i class="fab fa-github"></i> GitHub Repo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------ Project 7 ------------------>
+                    <div class="col-md-6 col-12 project-div">
+                        <div class="project-title-wrapper">
+                            <h3 class="project-heading">Nordic Company</h3>
+                            <h5 class="main-app">Main App</h5>
                         </div>
 
                         <!-- Carousel -->
@@ -171,10 +272,19 @@
                                     the database in production, while <strong>SQLite3</strong> is used during
                                     development. <br><br>
                                 </p>
-                                <strong class="text-center" style="color: rgb(22, 30, 120);">The project is
-                                    currently under development.</strong>
+
+                                <strong class="text-center" style="color: rgb(22, 30, 120);">Live
+                                    production version designed to be used by the client.</strong>
+
+                                <div class="container mt-4">
+                                    <div class="alert alert-warning text-center">
+                                        <p><strong>Note:</strong> A more comprehensive README file, detailing the full
+                                            features, setup instructions, and future plans for this application, will be
+                                            created and added soon.</p>
+                                    </div>
+                                </div>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
 
                                 <strong class="project-skills">
                                     JavaScript / ReactJS <i class="fa-solid fa-diamond"></i> Python / Django
@@ -203,7 +313,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row">
                     <!------------------ Project 6 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">UTime</h4>
@@ -286,7 +398,7 @@
                                     Despite not winning and my contributions being mostly in HTML and CSS, some
                                     testing, and ReadMe documentation, this was a very educational experience.
                                     <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
 
                                 <strong class="project-skills">
                                     HTML <i class="fa-solid fa-diamond"></i> CSS <i class="fa-solid fa-diamond"></i>
@@ -311,9 +423,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
                     <!------------------ Project 5 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">Melon Tasks</h4>
@@ -397,7 +507,7 @@
                                     </strong>, which was used for API development.
                                 </p>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
 
                                 <strong class="project-skills">
                                     ReactJS <i class="fa-solid fa-diamond"></i> Django
@@ -429,7 +539,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="row">
                     <!------------------ Project 4 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">Movie Base</h4>
@@ -504,7 +616,7 @@
                                     rate movies, and post reviews.
                                 </p>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
                                 <strong class="project-skills">
                                     Django<i class="fa-solid fa-diamond"></i>
                                     Responsive Web Design <i class="fa-solid fa-diamond"></i>
@@ -533,8 +645,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+
                     <!------------------ Project 3 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">Crypto Converter</h4>
@@ -595,7 +706,7 @@
                                     SEK. Technologies used : HTML, Python, JavaScript.
                                 </p>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
                                 <strong class="project-skills">
                                     JavaScript <i class="fa-solid fa-diamond"></i>
                                     HTML <i class="fa-solid fa-diamond"></i>
@@ -619,7 +730,8 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
                     <!------------------ Project 2 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">Quiz</h4>
@@ -679,7 +791,7 @@
                                     (<em>beginner level</em>)
                                 </p>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
                                 <strong class="project-skills">
                                     HTML <i class="fa-solid fa-diamond"></i>
                                     CSS <i class="fa-solid fa-diamond"></i>
@@ -704,8 +816,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+
                     <!------------------ Project 1 ------------------>
                     <div class="col-md-6 col-12 project-div">
                         <h4 class="project-heading">Fine Cuts</h4>
@@ -761,7 +872,7 @@
                                     This is my first project I ever made. It's a beauty salon website.
                                 </p>
                                 <hr class="dropdown-hr">
-                                <h6 class="text-center skills-header">SKILLS</h6>
+                                <h6 class="text-center skills-header">TECH STACK</h6>
                                 <strong class="project-skills">
                                     HTML <i class="fa-solid fa-diamond"></i>
                                     CSS

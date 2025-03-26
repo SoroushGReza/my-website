@@ -86,10 +86,9 @@ function fetchGitHubInformation(event) {
 
 $(document).ready(fetchGitHubInformation);
 
-
 //    Contributors GitHub
 
-function displayContributors(usernames) {
+function displayContributorsToCarousel(usernames, projectId, slideNumber) {
     let userDataPromises = usernames.map(username => $.getJSON(`https://api.github.com/users/${username}`));
 
     $.when(...userDataPromises).then(function (...responses) {
@@ -103,24 +102,45 @@ function displayContributors(usernames) {
             </div>
         `).join('');
 
-        var carouselSecondItem = $("#carouselProject6 .carousel-inner .carousel-item:nth-child(2)");
-        carouselSecondItem.find('.carousel-caption').remove();
-        carouselSecondItem.append(`
-            <div class="carousel-caption github-contributors d-flex flex-row flex-wrap align-items-center justify-content-center" style="left: 0; right: 0; bottom: 0; top: 0;">
+        let target = $(`#${projectId} .carousel-inner .carousel-item:nth-child(${slideNumber})`);
+        target.find('.carousel-caption').remove();
+        target.append(`
+            <div class="carousel-caption github-contributors d-flex flex-row flex-wrap align-items-center justify-content-center" style="left: 0; right: 0; bottom: 0; top: 0; margin-top: 3vw;">
                 ${contributorsHTML}
             </div>
         `);
 
-        // Manually attach click events to the carousel controls
-        $("#carouselProject6 .carousel-control-prev").click(function () {
-            $("#carouselProject6").carousel("prev");
+        // Manually control the carousel
+        $(`#${projectId} .carousel-control-prev`).click(function () {
+            $(`#${projectId}`).carousel("prev");
         });
-        $("#carouselProject6 .carousel-control-next").click(function () {
-            $("#carouselProject6").carousel("next");
+        $(`#${projectId} .carousel-control-next`).click(function () {
+            $(`#${projectId}`).carousel("next");
         });
     });
 }
 
+// All projects
+
 $(document).ready(function () {
-    displayContributors(['A-Hoenig', 'kosamad', 'SoroushGReza', 'BreakellrZ', 'MeganRoberts-dev']);
+    // UTime (Project 6)
+    displayContributorsToCarousel(
+        ['A-Hoenig', 'kosamad', 'SoroushGReza', 'BreakellrZ', 'MeganRoberts-dev'],
+        'carouselProject6',
+        2 // Slide number
+    );
+
+    // ForThe50 (Project 9)
+    displayContributorsToCarousel(
+        ['violaberg', 'SoroushGReza', 'Heath1979', 'surfdemon', 'FinnbarrAmbrose', 'chrysanthusobinna'],
+        'carouselProject9',
+        2 // Slide number
+    );
+
+    // Connection Engine (Project 11)
+    displayContributorsToCarousel(
+        ['iliana-marquez', 'Nexiauk', 'stephendawsondev', 'Wxrren', 'SoroushGReza'],
+        'carouselProject9',
+        2 // Slide number
+    );
 });

@@ -140,7 +140,7 @@ $(document).ready(function () {
     // Connection Engine (Project 11)
     displayContributorsToCarousel(
         ['iliana-marquez', 'Nexiauk', 'stephendawsondev', 'Wxrren', 'SoroushGReza'],
-        'carouselProject9',
+        'carouselProject11',
         2 // Slide number
     );
 });
